@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   |Ctlr|  Win  | Alt | Left | Right|                                         |  Up  | Down |   _  |   ?  |   +   |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | App  |Henkan|       | KANA |Ctrl/Esc|
+ *                                        | App  |hankaku|       | KANA |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      |  F2  |       |  F7  |        |      |
  *                                 | Space|Backsp|------|       |------| Enter  |  Tab |
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_BSPC,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z       ,  KC_X,   KC_C,   KC_V,   KC_B,   JP_LBRC,
         KC_LCTL,        KC_LGUI,      KC_LALT,  KC_LEFT,KC_RGHT,
-                                              ALT_T(KC_APP),  KC_LGUI,
+                                              ALT_T(KC_APP),  JP_ZHTG,
                                                               KC_F2,
                                                KC_SPC,KC_BSPC,MO(1),
         // right hand
