@@ -15,9 +15,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |   =    |   !  |   @  |   #  |   $  |   %  |   <  |           |   >  |  &   |  '  |    |   9  |   0  |   -    |
+ * |   =    |   !  |   "  |   #  |   $  |   %  |   <  |           |   >  |  &   |  '  |  ()  |   /  |   ~  |   -    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
- * | Del    |   Q  |   W  |   E  |   R  |   T  |  {   |           |   }  |   Y  |   U  |   I  |   O  |   P  |   \    |
+ * | Del    |   Q  |   W  |   E  |   R  |   T  |  {   |           |   }  |   Y  |   U  |   I  |   O  |   P  |   @    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
  * | BkSp   |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |  ;   |   :    |
  * |--------+------+------+------+------+------|  [   |           |   ]  |------+------+------+------+------+--------|
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
-        JP_EQL,         JP_EXLM,      JP_AT,  JP_HASH,JP_DLR, JP_PERC,JP_LT,
+        JP_EQL,         JP_DOT,      JP_AT,  JP_HASH,JP_DLR, JP_PERC,JP_LT,
         KC_DELT,        KC_Q,         KC_W,   KC_E,   KC_R,   KC_T,   JP_LCBR,
         KC_BSPC,        KC_A,         KC_S,   KC_D,   KC_F,   KC_G,
         KC_LSFT,        KC_Z       ,  KC_X,   KC_C,   KC_V,   KC_B,   JP_LBRC,
@@ -46,8 +46,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                               KC_F2,
                                                KC_SPC,KC_BSPC,MO(1),
         // right hand
-             JP_GT,       JP_AMPR,   JP_AMPR,   JP_LPRN,   JP_RPRN,   KC_0,             KC_MINS,
-             JP_RCBR,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_BSLS,
+             JP_GT,       JP_AMPR,   JP_AMPR,   JP_LPRN,   JP_SLSH,   JP_TILD,             KC_MINS,
+             JP_RCBR,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             JP_AT,
                           KC_H,   KC_J,   KC_K,   KC_L,   JP_SCLN,          JP_COLN,
              JP_RBRC,     KC_N,   KC_M,   KC_COMM,KC_DOT, JP_SLSH,          JP_PIPE,
                                   KC_UP,  KC_DOWN,JP_UNDS,JP_PERC,          JP_PLUS,
