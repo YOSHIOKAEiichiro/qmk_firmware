@@ -15,7 +15,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * |   =    |   !  |   @  |   #  |   $  |   %  |   <  |           |   >  |   6  |   7  |   8  |   9  |   0  |   -    |
+ * |   =    |   !  |   @  |   #  |   $  |   %  |   <  |           |   >  |  &   |  '  |   8  |   9  |   0  |   -    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Del    |   Q  |   W  |   E  |   R  |   T  |  {   |           |   }  |   Y  |   U  |   I  |   O  |   P  |   \    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *   |Ctlr|  Win  | Alt | Left | Right|                                         |  Up  | Down |   _  |   ?  |   +   |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | App  |hankaku|       | KANA |Ctrl/Esc|
+ *                                        | App  |hankaku|       | hankaku |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      |  F2  |       |  F7  |        |      |
  *                                 | Space|Backsp|------|       |------| Enter  |  Tab |
@@ -46,12 +46,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                               KC_F2,
                                                KC_SPC,KC_BSPC,MO(1),
         // right hand
-             JP_GT,       KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_MINS,
+             JP_GT,       JP_AMPR,   JP_AMPR,   KC_8,   KC_9,   KC_0,             KC_MINS,
              JP_RCBR,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_BSLS,
                           KC_H,   KC_J,   KC_K,   KC_L,   JP_SCLN,          JP_COLN,
              JP_RBRC,     KC_N,   KC_M,   KC_COMM,KC_DOT, JP_SLSH,          JP_PIPE,
                                   KC_UP,  KC_DOWN,JP_UNDS,JP_PERC,          JP_PLUS,
-             JP_KANA,        CTL_T(KC_ESC),
+             JP_ZHTG,        CTL_T(KC_ESC),
              KC_F7,
              MO(2),KC_ENT,KC_TAB
     ),
