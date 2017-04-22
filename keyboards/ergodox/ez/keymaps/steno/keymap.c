@@ -50,7 +50,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
              JP_RCBR,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             JP_AT,
                           KC_H,   KC_J,   KC_K,   KC_L,   JP_SCLN,          JP_COLN,
              JP_RBRC,     KC_N,   KC_M,   KC_COMM,KC_DOT, JP_SLSH,          JP_PIPE,
-                                  KC_UP,  KC_DOWN,JP_UNDS,JP_PERC,          JP_PLUS,
+                                  KC_UP,  KC_DOWN,JP_UNDS,JP_QUES,          JP_PLUS,
              JP_ZHTG,        CTL_T(KC_ESC),
              KC_F7,
              MO(2),KC_ENT,KC_TAB
